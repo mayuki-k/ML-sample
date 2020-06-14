@@ -29,3 +29,19 @@ jupyter notebook list
 ```
 
 で、tokenの確認可能
+
+# matplotlib(plt)
+
+## グラフ表示
+
+```
+plt.show()
+```
+
+```
+plt.scatter(X1, X2, c=Y, cmap=plt.cm.coolwarm)
+```
+
+# Question
+
+- 正規化、標準化とは？
