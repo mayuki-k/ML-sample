@@ -6,6 +6,14 @@
 |logistic.py|ロジスティック回帰|
 |svc.py|SVC|
 
+# 三点セット
+
+```
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+```
+
 # docker-jupyternotebook 起動
 
 ```
