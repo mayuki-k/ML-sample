@@ -42,6 +42,14 @@ plt.show()
 plt.scatter(X1, X2, c=Y, cmap=plt.cm.coolwarm)
 ```
 
+# mlxtend.plotting
+
+## plot_decision_regions
+
+```
+plot_decision_regions(X, Y, clf, res)
+```
+
 # Question
 
 - 正規化、標準化とは？
