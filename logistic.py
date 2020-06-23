@@ -1,17 +1,16 @@
 # このモジュールでは学習のみを行う。データ取得は別モジュールにて。
 
 from sklearn import linear_model
-from sklearn.model_selection import train_test_split
 # データ取得モジュール
 from env import make1
+import util
 
-l, d = make1.get_data()
+x_train, x_test, y_train, y_test = make1.get_data()
 
-def logistic(data, label):
-    x_train, x_test, y_train, y_test = train_test_split(data, label, random_state=0)
+def logistic(x, y):
     pre = linear_model.LogisticRegression(random_state=0)
-    pre.fit(x_train, y_train)
-    print(f'score = {pre.score(x_test, y_test)}')
-    print(pre.predict([[22, 8]]))
+    pre.fit(x, y)
+    return pre
 
-logistic(d, l)
+f = logistic(x_train, y_train)
+util.show_score(f, x_test, y_test, 'Test')
