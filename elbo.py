@@ -1,4 +1,5 @@
 from sklearn.cluster import KMeans
+from env import make10
 
 sse = []
 
